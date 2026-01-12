@@ -6,7 +6,8 @@ Logistic regression model has been implemented to predict the dropout percentage
 ## Project Overview
 
 - **Independent Variables**:
-  A total of 34 independent variables have been incorporated into the prediction analysis. 
+  A total of 34 independent variables have been incorporated into the prediction analysis.
+
   - School: Name of the school attended (e.g., MS).
   - Gender: Gender of the student (e.g., M for Male, F for Female).
   - Age: Age of the student.
@@ -42,14 +43,16 @@ Logistic regression model has been implemented to predict the dropout percentage
   - Final_Grade: Final grade received (G3).
   - Dropped_Out: Indicator of whether the student has dropped out (True/False).
 
-- **Data Preparation**: 
+- **Data Preparation**:
+
   - The dataset was cleaned and formatted to ensure proper use in logistic regression analysis.
   - Non-numeric variables were converted into numeric values to make them compatible with the model.
 
-- **Logistic Regression Analysis**: 
+- **Logistic Regression Analysis**:
+
   - A logistic regression model was developed to predict the student dropout percentage on the provided variables.
 
-- **Streamlit Web App**: 
+- **Streamlit Web App**:
   - A dashboard was created using the Streamlit library.
   - The app allows for visualization of the regression model and provides an interface for predicting student dropout percentage.
 
@@ -62,12 +65,14 @@ Logistic regression model has been implemented to predict the dropout percentage
 ## Installation & Run
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/syedasmarali/student-dropout-predictor.git
-   cd student-dropout-predictor
+   git clone https://github.com/zekeriyamuuhammedhusen/Dropout_Predictor_of_Students_on_ML.git
+   cd Dropout_Predictor_of_Students_on_ML
    ```
 
 2. (Optional) Create and activate a virtual environment:
+
    - On Windows (PowerShell):
      ```powershell
      python -m venv .venv
@@ -80,6 +85,7 @@ Logistic regression model has been implemented to predict the dropout percentage
      ```
 
 3. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -90,6 +96,7 @@ Logistic regression model has been implemented to predict the dropout percentage
    ```
 
 Note about training:
+
 - The training script now fits a pipeline (StandardScaler + LogisticRegression with `max_iter=1000`) to improve convergence and ensure features are scaled before training.
 
 5. Run the Streamlit app:
@@ -98,9 +105,9 @@ Note about training:
    ```
 
 Notes:
+
 - Ensure you have Python 3.8+ installed.
 - If you see "Python not found" on Windows, confirm Python is installed and added to PATH, or run via the Python executable path.
-
 
 ## Technologies Used
 
